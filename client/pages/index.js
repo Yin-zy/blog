@@ -1,4 +1,1 @@
-const home = () => {
-  <h1>Hello World!</h1>;
-};
-export default home;
+export default () => <div>Welcome to next.js!</div>;
