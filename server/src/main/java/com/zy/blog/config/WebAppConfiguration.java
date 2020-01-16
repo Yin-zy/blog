@@ -17,7 +17,7 @@ import java.util.List;
 @ConditionalOnClass(Gson.class)
 @ConditionalOnMissingClass("com.fasterxml.jackson.core.JsonGenerator")
 @ConditionalOnBean(Gson.class)
-public class WebAppConfig implements WebMvcConfigurer {
+public class WebAppConfiguration implements WebMvcConfigurer {
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(customGsonHttpMessageConverter());
